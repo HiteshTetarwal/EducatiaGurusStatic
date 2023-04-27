@@ -28,6 +28,26 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
+<style>
+  #portfolio-details .swiper-slide img {
+    height: 100%;
+    max-height: 600px;
+    /* Adjust this value as needed */
+    object-fit: cover;
+  }
+
+  #portfolio-details .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #portfolio-details .portfolio-description {
+    margin-top: 40px;
+  }
+</style>
+
+
 </head>
 
 <body>
@@ -37,14 +57,14 @@
     <div class="container d-flex align-items-center justify-content-between">
   
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>EducatiaGurus</span></a></h1>
+        <h1 class="text-light"><a href="../index.html"><span>EducatiaGurus</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
   
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
           <li class="dropdown"><a href="#"><span>Trainings</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="portfolio-salesforce.html">Salesforce Training</a></li>
@@ -71,7 +91,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Portfolio Details</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#portfolio">Portfolio</a></li>
             <li>Portfolio Details</li>
           </ol>
@@ -80,55 +100,72 @@
       </div>
     </section><!-- Breadcrumbs Section -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/portfolio-4.jpg" alt="">
             </div>
+            <!-- <div class="swiper-slide">
+              <img src="../assets/img/portfolio/portfolio-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/img/portfolio/portfolio-3.jpg" alt="">
+            </div> -->
           </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Data Engineering</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
+          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Data Engineering</h3>
+          <ul>
+            <li><strong>Category</strong>: Data Engineering</li>
+            <li><strong>Next batch date</strong>: 01 May, 2023</li>
+            <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class="portfolio-description">
+          <h2>Welcome to Educationgurus' Data Engineering Boot Camp!</h2>
+          <p>Our comprehensive program is designed to provide you with the skills and knowledge needed to succeed in the
+            field of Big Data and Cloud Computing. The program consists of five modules, including:</p>
+          <ul>
+            <li>Big Data Hadoop and Spark Developer</li>
+            <li>AWS Tech Essentials</li>
+            <li>Big Data on AWS</li>
+            <li>Azure Fundamentals</li>
+            <li>Azure Data Engineer</li>
+          </ul>
+          <p>The Big Data Hadoop and Spark Developer module will help you master Mapreduce Framework and advance
+            concepts of Mapreduce, while also enriching your knowledge on different tools such as Apache Hive, Apache
+            Pig, Hbase, Spark, and YARN.</p>
+          <p>The AWS Tech Essentials module will teach you how to navigate the AWS management console, understand AWS
+            security measures, storage, and database options, and gain expertise in web services like RDS and EBS.</p>
+          <p>The Big Data on AWS module will help you understand the Amazon Web Services cloud platform, Kinesis
+            Analytics, AWS Big Data storage, processing, analysis, visualization, and security service, EMR, AWS Lambda,
+            Glue, and machine learning algorithms.</p>
+          <p>The Azure Fundamentals module covers the main principles of cloud computing and how they have been
+            implemented in Microsoft Azure, while the Azure Data Engineer module focuses on data-related implementation
+            including provisioning data storage services, ingesting streaming and batch data, transforming data,
+            implementing security requirements, implementing data retention policies, identifying performance
+            bottlenecks, and accessing external data sources.</p>
+          <p>The program concludes with the Data Engineering Capstone project, where you will have an opportunity to
+            implement the skills you learned throughout the Boot Camp. Get ready to take the first step towards a career
+            in Data Engineering!</p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Portfolio Details Section -->
+
 
     <section id="reviews" class="reviews">
       <div class="container">
@@ -143,38 +180,15 @@
               <div class="review-img">
                 <img src="assets/img/testimonials/testimonials-1.jpg" alt="">
               </div>
-              <h3>Anjali Sharma</h3>
-              <p>Attended Java Training and it was an amazing experience. The trainers were very knowledgeable and
-                supportive.
-                They covered all the important topics and provided hands-on experience which was very helpful in
-                understanding
-                the concepts. Highly recommended!</p>
+              <h3>Abhishek Pandey</h3>
+              <p>The program exceeded my expectations. I particularly enjoyed the Big Data Hadoop and Spark Developer module, which
+              helped me gain proficiency in different Big Data tools.</p>
               <div class="rating">
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star-half"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="review-box">
-              <div class="review-img">
-                <img src="assets/img/testimonials/testimonials-2.jpg" alt="">
-              </div>
-              <h3>Ajay Kumar</h3>
-              <p>I joined Java Training and it was a great experience. The trainers were very experienced and provided
-                excellent
-                guidance throughout the course. The course content was well-structured and the hands-on exercises helped
-                me to
-                gain practical knowledge. Highly recommend this training to anyone looking to learn Java.</p>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star-half"></i>
-                <i class="bx bx-star"></i>
               </div>
             </div>
           </div>
@@ -183,17 +197,34 @@
               <div class="review-img">
                 <img src="assets/img/testimonials/testimonials-3.jpg" alt="">
               </div>
-              <h3>Rajesh Gupta</h3>
-              <p>Attended Java Training and it was an amazing experience. The trainers were very knowledgeable and
-                provided
-                in-depth explanations of all the concepts. The course content was comprehensive and the hands-on
-                experience
-                helped me to apply the concepts in real-world scenarios. Highly recommended!</p>
+              <h3>Mukteshwar Patnaik</h3>
+              <p>The Data Engineering Capstone project was the perfect culmination of the program, allowing me to apply my
+                newfound
+                skills to a real-world project. Highly recommend the Educationgurus' Data Engineering Boot Camp to anyone
+                interested in
+                this field.</p>
               <div class="rating">
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star"></i>
                 <i class="bx bxs-star-half"></i>
                 <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="review-box">
+              <div class="review-img">
+                <img src="assets/img/testimonials/testimonials-2.jpg" alt="">
+              </div>
+              <h3>Pratik Mishra</h3>
+              <p>The Educationgurus' Data Engineering Boot Camp provided me with a strong foundation in Big Data and Cloud Computing.
+              The modules were well-structured, and the instructors were knowledgeable and approachable.</p>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
                 <i class="bx bx-star"></i>
               </div>
             </div>
